@@ -16,7 +16,7 @@ void setup(){
     if (pick > 0.5) {
       backpack[i] = 1;
       weight += weightList[i];
-      fitness += weightList[i];
+      fitness += priceList[i];
       backpack[10] = (int) fitness;
       backpack[11] = (int) weight;
       print(items[1]);
@@ -27,4 +27,7 @@ void setup(){
     print(backpack[i] + " ");
   }
   println();
+  
+  println(weight);
+  println(fitness);
 }
